@@ -1,0 +1,45 @@
+/*
+filename: layout.css
+author: Liam White
+created: 31/03/2026
+description: layout styling for lab05.html used for practising with multiple css files!
+*/
+
+/* Override hover effect */
+aside:hover {
+    display: block;
+}
+
+/* Menu layout */
+.menu {
+    display: inline-block;
+}
+
+/* Aside styling | this is where i do the details of the aside styling, 
+    setting the border size, margin padding, 
+    aswell as the image so it fades */
+aside 
+{
+    border: 4px inset purple;
+    border-radius: 14px;
+    margin: 1em;
+    padding: 1em;
+    width: 30%;
+    background: url("images/fade.jpg") repeat-x top left;
+    float: right;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+/* Header styling stuff*/
+header {
+    border: 1px solid darkgray; /*sets colours of border and background*/
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* Footer styling stuff*/
+footer {
+    border-top: 4px double blue;
+}
