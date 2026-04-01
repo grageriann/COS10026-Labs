@@ -20,14 +20,14 @@ aside:hover {
     aswell as the image so it fades */
 aside 
 {
-    border: 4px inset purple;
+    border: 12px inset purple;
     border-radius: 14px;
-    margin: 1em;
-    padding: 1em;
-    width: 30%;
+    margin: 4em;
+    padding: 3em;
+    width: 12%;
     background: url("images/fade.jpg") repeat-x top left;
     float: right;
-    box-shadow: 10px 10px 5px #aaaaaa;
+    box-shadow: 15px 15px 8px #2bb816;
 }
 
 /* Header styling stuff*/
