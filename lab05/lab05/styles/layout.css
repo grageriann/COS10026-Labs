@@ -20,14 +20,14 @@ aside:hover {
     aswell as the image so it fades */
 aside 
 {
-    border: 12px inset purple;
+    border: 4px inset purple;
     border-radius: 14px;
-    margin: 4em;
-    padding: 3em;
-    width: 12%;
+    margin: 2em;
+    padding: 2em;
+    width: 20%;
     background: url("images/fade.jpg") repeat-x top left;
     float: right;
-    box-shadow: 15px 15px 8px #2bb816;
+    box-shadow: 10px 10px 8px #2bb816;
 }
 
 /* Header styling stuff*/
@@ -39,16 +39,26 @@ header {
     text-align: center;
 }
 
-/* Lists on the left */
-#lists {float: left;}
-/* Tables on the right */
-#tables {float: right;}
-/* Images on the right */
-#images {float: right;}
-/* Stop floating for hyperlinks */
-#hyperlinks {clear: both;}
-/* Set widths and alignment for sections */
-#lists, #images, #tables, #hyperlinks {width: 50%; text-align: center;}
+/* Existing code for floats */
+#lists { float: left; }
+#tables { float: right; }
+
+/* Add 'clear: both' here to ensure these two start on a new line 
+   below the lists and tables */
+#hyperlinks { 
+    float: left; 
+    clear: left; 
+}
+
+#images { 
+    float: right; 
+    clear: right; 
+}
+
+#lists, #images, #tables, #hyperlinks {
+    width: 40%;   
+    text-align: center;
+}
 /* Fix list alignment */
 ol, ul, dl {text-align: left;}
 /* Center table */
@@ -60,17 +70,19 @@ footer {border-top: 4px double darkgray; clear: both;}
 /* Improve readability */
 article {min-width: 30em;}
 /* Footer paragraphs layout */
-footer p {display: inline-block; width: 33%;}
+footer {
+    border-top: 4px double darkgray;
+    clear: both;
+    text-align: center;
+    padding: 10px 0;
+}
 
-/* First paragraph (left) */
-footer p:first-child {float: left;}
-/* Middle paragraph (center) */
-footer p:nth-child(2) {text-align: center;}
-/* Last paragraph (right) */
-footer p:last-child {float: right; text-align: right;}
+footer p {
+    margin: 0;
+}
 
 
 
-/*used chatgpt to generate this part from lines 48-67 
+/*used chatgpt to generate this part from lines 53-
 because ive already done that work last week except for article
 which i know what it does, because im lazy :p*/

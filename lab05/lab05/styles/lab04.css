@@ -71,11 +71,6 @@ ol ul {
     list-style-type: square;
 }
 
-/* Pseudo classes */
-aside:hover {
-    display: none;
-}
-
 nav a:hover {
     background-color: lightblue;
     border-color: darkblue;
